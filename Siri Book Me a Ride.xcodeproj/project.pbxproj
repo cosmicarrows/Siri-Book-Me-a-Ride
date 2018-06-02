@@ -12,6 +12,10 @@
 		E9CC1D3C20C2313B002DAF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CC1D3A20C2313B002DAF0D /* Main.storyboard */; };
 		E9CC1D3E20C23141002DAF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CC1D3D20C23141002DAF0D /* Assets.xcassets */; };
 		E9CC1D4120C23141002DAF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CC1D3F20C23141002DAF0D /* LaunchScreen.storyboard */; };
+		E9CC1D4920C23159002DAF0D /* RideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4820C23159002DAF0D /* RideService.swift */; };
+		E9CC1D4B20C2319B002DAF0D /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4A20C2319B002DAF0D /* Ride.swift */; };
+		E9CC1D4D20C231C1002DAF0D /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4C20C231C1002DAF0D /* RideType.swift */; };
+		E9CC1D4F20C2323C002DAF0D /* DummyRideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E9CC1D3D20C23141002DAF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CC1D4020C23141002DAF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CC1D4220C23141002DAF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CC1D4820C23159002DAF0D /* RideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideService.swift; sourceTree = "<group>"; };
+		E9CC1D4A20C2319B002DAF0D /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		E9CC1D4C20C231C1002DAF0D /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
+		E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRideService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		E9CC1D3520C2313B002DAF0D /* Siri Book Me a Ride */ = {
 			isa = PBXGroup;
 			children = (
+				E9CC1D4820C23159002DAF0D /* RideService.swift */,
+				E9CC1D4C20C231C1002DAF0D /* RideType.swift */,
+				E9CC1D4A20C2319B002DAF0D /* Ride.swift */,
+				E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */,
 				E9CC1D3620C2313B002DAF0D /* AppDelegate.swift */,
 				E9CC1D3820C2313B002DAF0D /* ViewController.swift */,
 				E9CC1D3A20C2313B002DAF0D /* Main.storyboard */,
@@ -135,7 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CC1D4D20C231C1002DAF0D /* RideType.swift in Sources */,
 				E9CC1D3920C2313B002DAF0D /* ViewController.swift in Sources */,
+				E9CC1D4B20C2319B002DAF0D /* Ride.swift in Sources */,
+				E9CC1D4920C23159002DAF0D /* RideService.swift in Sources */,
+				E9CC1D4F20C2323C002DAF0D /* DummyRideService.swift in Sources */,
 				E9CC1D3720C2313B002DAF0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
