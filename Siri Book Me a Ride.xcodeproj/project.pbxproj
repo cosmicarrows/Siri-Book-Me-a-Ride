@@ -30,6 +30,7 @@
 		E9CC1D4A20C2319B002DAF0D /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		E9CC1D4C20C231C1002DAF0D /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
 		E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRideService.swift; sourceTree = "<group>"; };
+		E9CC1D6E20C2D149002DAF0D /* Siri Book Me a Ride.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Siri Book Me a Ride.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		E9CC1D3520C2313B002DAF0D /* Siri Book Me a Ride */ = {
 			isa = PBXGroup;
 			children = (
+				E9CC1D6E20C2D149002DAF0D /* Siri Book Me a Ride.entitlements */,
 				E9CC1D4820C23159002DAF0D /* RideService.swift */,
 				E9CC1D4C20C231C1002DAF0D /* RideType.swift */,
 				E9CC1D4A20C2319B002DAF0D /* Ride.swift */,
@@ -108,6 +110,11 @@
 				TargetAttributes = {
 					E9CC1D3220C2313B002DAF0D = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -296,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Siri Book Me a Ride/Siri Book Me a Ride.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
 				INFOPLIST_FILE = "Siri Book Me a Ride/Info.plist";
@@ -314,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Siri Book Me a Ride/Siri Book Me a Ride.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7XKP3B2C9;
 				INFOPLIST_FILE = "Siri Book Me a Ride/Info.plist";

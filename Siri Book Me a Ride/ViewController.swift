@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -67,7 +68,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         ridesTableView.delegate = self
         ridesTableView.dataSource = self
-        // Do any additional setup after loading the view, typically from a nib.
+        requestSiriAuthorization()
+    }
+    
+    private func requestSiriAuthorization(){
+        INPreferences.requestSiriAuthorization { (authorizationStatus) in
+            switch authorizationStatus {
+            case .authorized:
+                print("User authorized Siri")
+            default:
+                print("User didn't authorize Siri")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
