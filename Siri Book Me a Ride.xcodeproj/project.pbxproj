@@ -16,7 +16,45 @@
 		E9CC1D4B20C2319B002DAF0D /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4A20C2319B002DAF0D /* Ride.swift */; };
 		E9CC1D4D20C231C1002DAF0D /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4C20C231C1002DAF0D /* RideType.swift */; };
 		E9CC1D4F20C2323C002DAF0D /* DummyRideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */; };
+		E9CC1D7620C2D412002DAF0D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D7520C2D412002DAF0D /* IntentHandler.swift */; };
+		E9CC1D7F20C2D412002DAF0D /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC1D7E20C2D412002DAF0D /* IntentsUI.framework */; };
+		E9CC1D8220C2D412002DAF0D /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CC1D8120C2D412002DAF0D /* IntentViewController.swift */; };
+		E9CC1D8520C2D412002DAF0D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CC1D8320C2D412002DAF0D /* MainInterface.storyboard */; };
+		E9CC1D8920C2D412002DAF0D /* SiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9CC1D7C20C2D412002DAF0D /* SiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9CC1D8C20C2D412002DAF0D /* Siri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E9CC1D7320C2D412002DAF0D /* Siri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9CC1D8720C2D412002DAF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9CC1D2B20C2313B002DAF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CC1D7B20C2D412002DAF0D;
+			remoteInfo = SiriUI;
+		};
+		E9CC1D8A20C2D412002DAF0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9CC1D2B20C2313B002DAF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9CC1D7220C2D412002DAF0D;
+			remoteInfo = Siri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9CC1D9320C2D412002DAF0D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E9CC1D8920C2D412002DAF0D /* SiriUI.appex in Embed App Extensions */,
+				E9CC1D8C20C2D412002DAF0D /* Siri.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9CC1D3320C2313B002DAF0D /* Siri Book Me a Ride.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Siri Book Me a Ride.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +69,14 @@
 		E9CC1D4C20C231C1002DAF0D /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
 		E9CC1D4E20C2323C002DAF0D /* DummyRideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyRideService.swift; sourceTree = "<group>"; };
 		E9CC1D6E20C2D149002DAF0D /* Siri Book Me a Ride.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Siri Book Me a Ride.entitlements"; sourceTree = "<group>"; };
+		E9CC1D7320C2D412002DAF0D /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CC1D7520C2D412002DAF0D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E9CC1D7720C2D412002DAF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CC1D7C20C2D412002DAF0D /* SiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CC1D7E20C2D412002DAF0D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E9CC1D8120C2D412002DAF0D /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E9CC1D8420C2D412002DAF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E9CC1D8620C2D412002DAF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +87,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9CC1D7020C2D412002DAF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CC1D7920C2D412002DAF0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CC1D7F20C2D412002DAF0D /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				E9CC1D3520C2313B002DAF0D /* Siri Book Me a Ride */,
+				E9CC1D7420C2D412002DAF0D /* Siri */,
+				E9CC1D8020C2D412002DAF0D /* SiriUI */,
+				E9CC1D7D20C2D412002DAF0D /* Frameworks */,
 				E9CC1D3420C2313B002DAF0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				E9CC1D3320C2313B002DAF0D /* Siri Book Me a Ride.app */,
+				E9CC1D7320C2D412002DAF0D /* Siri.appex */,
+				E9CC1D7C20C2D412002DAF0D /* SiriUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +144,33 @@
 			path = "Siri Book Me a Ride";
 			sourceTree = "<group>";
 		};
+		E9CC1D7420C2D412002DAF0D /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				E9CC1D7520C2D412002DAF0D /* IntentHandler.swift */,
+				E9CC1D7720C2D412002DAF0D /* Info.plist */,
+			);
+			path = Siri;
+			sourceTree = "<group>";
+		};
+		E9CC1D7D20C2D412002DAF0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9CC1D7E20C2D412002DAF0D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9CC1D8020C2D412002DAF0D /* SiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				E9CC1D8120C2D412002DAF0D /* IntentViewController.swift */,
+				E9CC1D8320C2D412002DAF0D /* MainInterface.storyboard */,
+				E9CC1D8620C2D412002DAF0D /* Info.plist */,
+			);
+			path = SiriUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,15 +181,52 @@
 				E9CC1D2F20C2313B002DAF0D /* Sources */,
 				E9CC1D3020C2313B002DAF0D /* Frameworks */,
 				E9CC1D3120C2313B002DAF0D /* Resources */,
+				E9CC1D9320C2D412002DAF0D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E9CC1D8820C2D412002DAF0D /* PBXTargetDependency */,
+				E9CC1D8B20C2D412002DAF0D /* PBXTargetDependency */,
 			);
 			name = "Siri Book Me a Ride";
 			productName = "Siri Book Me a Ride";
 			productReference = E9CC1D3320C2313B002DAF0D /* Siri Book Me a Ride.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E9CC1D7220C2D412002DAF0D /* Siri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CC1D9020C2D412002DAF0D /* Build configuration list for PBXNativeTarget "Siri" */;
+			buildPhases = (
+				E9CC1D6F20C2D412002DAF0D /* Sources */,
+				E9CC1D7020C2D412002DAF0D /* Frameworks */,
+				E9CC1D7120C2D412002DAF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siri;
+			productName = Siri;
+			productReference = E9CC1D7320C2D412002DAF0D /* Siri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E9CC1D7B20C2D412002DAF0D /* SiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9CC1D8D20C2D412002DAF0D /* Build configuration list for PBXNativeTarget "SiriUI" */;
+			buildPhases = (
+				E9CC1D7820C2D412002DAF0D /* Sources */,
+				E9CC1D7920C2D412002DAF0D /* Frameworks */,
+				E9CC1D7A20C2D412002DAF0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriUI;
+			productName = SiriUI;
+			productReference = E9CC1D7C20C2D412002DAF0D /* SiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -116,6 +246,12 @@
 							};
 						};
 					};
+					E9CC1D7220C2D412002DAF0D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					E9CC1D7B20C2D412002DAF0D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
 				};
 			};
 			buildConfigurationList = E9CC1D2E20C2313B002DAF0D /* Build configuration list for PBXProject "Siri Book Me a Ride" */;
@@ -132,6 +268,8 @@
 			projectRoot = "";
 			targets = (
 				E9CC1D3220C2313B002DAF0D /* Siri Book Me a Ride */,
+				E9CC1D7220C2D412002DAF0D /* Siri */,
+				E9CC1D7B20C2D412002DAF0D /* SiriUI */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +282,21 @@
 				E9CC1D4120C23141002DAF0D /* LaunchScreen.storyboard in Resources */,
 				E9CC1D3E20C23141002DAF0D /* Assets.xcassets in Resources */,
 				E9CC1D3C20C2313B002DAF0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CC1D7120C2D412002DAF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CC1D7A20C2D412002DAF0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CC1D8520C2D412002DAF0D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +316,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9CC1D6F20C2D412002DAF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CC1D7620C2D412002DAF0D /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9CC1D7820C2D412002DAF0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CC1D8220C2D412002DAF0D /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9CC1D8820C2D412002DAF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9CC1D7B20C2D412002DAF0D /* SiriUI */;
+			targetProxy = E9CC1D8720C2D412002DAF0D /* PBXContainerItemProxy */;
+		};
+		E9CC1D8B20C2D412002DAF0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9CC1D7220C2D412002DAF0D /* Siri */;
+			targetProxy = E9CC1D8A20C2D412002DAF0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E9CC1D3A20C2313B002DAF0D /* Main.storyboard */ = {
@@ -180,6 +362,14 @@
 				E9CC1D4020C23141002DAF0D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9CC1D8320C2D412002DAF0D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9CC1D8420C2D412002DAF0D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +492,7 @@
 		E9CC1D4620C23141002DAF0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Siri Book Me a Ride/Siri Book Me a Ride.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +512,7 @@
 		E9CC1D4720C23141002DAF0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Siri Book Me a Ride/Siri Book Me a Ride.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +524,82 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cosmicarrows.Siri-Book-Me-a-Ride";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9CC1D8E20C2D412002DAF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7XKP3B2C9;
+				INFOPLIST_FILE = SiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cosmicarrows.Siri-Book-Me-a-Ride.SiriUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9CC1D8F20C2D412002DAF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7XKP3B2C9;
+				INFOPLIST_FILE = SiriUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cosmicarrows.Siri-Book-Me-a-Ride.SiriUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9CC1D9120C2D412002DAF0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7XKP3B2C9;
+				INFOPLIST_FILE = Siri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cosmicarrows.Siri-Book-Me-a-Ride.Siri";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9CC1D9220C2D412002DAF0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P7XKP3B2C9;
+				INFOPLIST_FILE = Siri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cosmicarrows.Siri-Book-Me-a-Ride.Siri";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +622,24 @@
 			buildConfigurations = (
 				E9CC1D4620C23141002DAF0D /* Debug */,
 				E9CC1D4720C23141002DAF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9CC1D8D20C2D412002DAF0D /* Build configuration list for PBXNativeTarget "SiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CC1D8E20C2D412002DAF0D /* Debug */,
+				E9CC1D8F20C2D412002DAF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9CC1D9020C2D412002DAF0D /* Build configuration list for PBXNativeTarget "Siri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9CC1D9120C2D412002DAF0D /* Debug */,
+				E9CC1D9220C2D412002DAF0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
